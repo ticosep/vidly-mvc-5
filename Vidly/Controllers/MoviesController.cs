@@ -10,8 +10,8 @@ namespace Vidly.Controllers
         public ViewResult Index()
         {
             var movies = new List<Movie>{
-               new Movie{ Name = "Shrek!" },
-               new Movie{ Name = "Hey arnold!" },
+               new Movie{ Id = 1, Name = "Shrek!" },
+               new Movie{ Id = 2, Name = "Hey arnold!" },
             };
 
             var moviesView = new MoviesViewModel{ Movies = movies };
